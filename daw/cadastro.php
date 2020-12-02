@@ -28,7 +28,7 @@ if(isset($_POST["sub_but"])):
     else:
         if($senha == $conf_senha):
             echo "tudo certo ate aqui.";
-            $sql = "INSERT INTO usuarios VALUES ('$nome', '$email', '$login', '$senha');";  // falta aplicar o sql statement correcto aqui para inserir usuario
+            $sql = "INSERT INTO usuarios VALUES ('$nome', '$email', '$login', '$senha');";  
             $resultado = mysql_query($connect, $sql);
 
             if(mysql_num_rows($resultado) < 0):
