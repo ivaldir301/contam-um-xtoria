@@ -1,0 +1,90 @@
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+  margin-left: 30px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+body{
+    text-align: center;
+    float: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header.sticky .navigation li a{
+    color: #111;
+}
+
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-family: 2em;
+    text-decoration: none;
+}
+
+header .logo span{
+    color: #f13020;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 70px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header .navigation li a:hover{
+    color: #f13020;
+}
+
+.fomrcont{
+    background-color: cyan;
+    background: darkgreen;
+    border: darkmagenta;
+}
