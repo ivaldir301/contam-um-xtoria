@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="videoport" content="width=device-width, inicial-scale=1.0">
+    <title>Pagina inicial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Home<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="Sobrenos.html">Sobre Nós</a></li>
+            <li><a href="login.php">Login</a></li>            
+            <li><a href="contactos.html">Contactos</a></li>          
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Contam um Xtoria</h2>
+            <p>Com o objectivo de preservar, construir e inovar o que de melhor a nossa cultura tem, saiu a idea de criar
+               uma plataforma que fosse capaz de permitir a criação, divulgação e consumo de nossa reserva cultural.
+            </p>
+            <a href="login.php" class="btn">Login</a>
+        </div>
+    </section>
+
+   
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+
+</body>     
+</html>
