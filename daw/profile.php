@@ -1,11 +1,12 @@
 <?php
 
-if(isset($_SESSION['logado'])):
+
 
     include 'db_connect.php';
     session_start();
     echo $_SESSION['id_usuario'];
-        
+    
+    echo "<head><style>img{width: 50px; height: 50px;}</style></head>";
     echo "<h1>Upload de foto de ficheiro</h1><br><form action='script_forprofile.php' method='POST' enctype='multipart/form-data' >
     <input type='file' name='file'><br><br>
     <button type='submit' name='send'>UPLOAD</button>
@@ -17,8 +18,8 @@ if(isset($_SESSION['logado'])):
     $nomeFicheiro = 'uploads/profile'.$id.'.jpg';
         
     if(file_exists($nomeFicheiro)):
-    echo "<br><br>Ficheiro existe";
-    echo "<img src='$nomeFicheiro'>";
+    echo "<br><br>Ficheiro existe<br>";
+    echo "<img style='width: 500px; height: 500px;'= src='$nomeFicheiro'><br><br>";
     else:
     echo "Ficheiro não existe";
     endif;    
@@ -40,6 +41,4 @@ if(isset($_SESSION['logado'])):
         echo "<br>Numero de users presentes no sistema<br>";
         echo $resul[0];
     endif;
-else:
-    header('location: login.php');    
-endif;
+ 

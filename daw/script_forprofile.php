@@ -33,7 +33,7 @@ if(isset($_POST['send'])):
                 unlink($nomeFicheiro);
                 
                 move_uploaded_file($fileTmpname, $fileDestination);
-                $sql = "INSERT INTO conteudos VALUES() WHERE userid='$id';";
+                $sql = "INSERT INTO imgupload(nome, id) VALUES ('$nomeFicheiro', '$id')";
                 $resultado = mysqli_query($connect, $sql);
                 echo "O upload do ficheiro foi um sucesso!<br>"; 
             

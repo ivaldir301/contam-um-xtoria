@@ -30,7 +30,7 @@ mysqli_close($connect);
 <body>
 
 <h1>Ola 
-
+<br><br>
 
 <?php 
 
@@ -38,7 +38,7 @@ mysqli_close($connect);
 if(isset($dados['login'])):
     echo $dados['login'];
     echo $_SESSION['id_usuario'];
-    echo "<img src='uploads/profile".$id.".jpg'>";
+    echo "<br><img style='width: 500px; height: 500px;' src='uploads/profile".$id.".jpg'><br>";
 else:
     echo "<br>Nenhum dado foi encontrado.";
 endif;     

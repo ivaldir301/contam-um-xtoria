@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once 'db_connect-forfileupload.php';
+require_once 'db_connect.php';
 
 if(isset($_POST['send'])):
     $file = $_FILES['file'];
@@ -22,19 +22,15 @@ if(isset($_POST['send'])):
     $fileActualExtension = strtolower(end($fileExtension));    
 
     $allowed = array('jpg', 'jpeg', 'png');
-    //$id = $_SESSION['id_usuario'];
 
     $randomnum = uniqid('', true);
     $id = $_SESSION['id_usuario'];
 
-    $id = $_SESSION['id_usuario'];
     if(in_array($fileActualExtension, $allowed)):
         if($fileError === 0):
-            if($fileSize < 500000):
+            if($fileSize < 5000000):
                 $fileNewName = "conteudo".$id.$randomnum.".".$fileActualExtension;
                 $fileDestination = 'cont/'.$fileNewName;
-
-                include_once 'db_connect-forfileupload.php';
 
                 //$nomeFicheiro = 'cont/cont'.$tipo.'.jpg';
                 //$nomeFicheiro = 'uploads/profile'.$id.'.jpg';
@@ -43,12 +39,12 @@ if(isset($_POST['send'])):
                 //move_uploaded_file($fileTmpname, $fileDestination);
                 //$sql = "INSERT INTO conteudos(nome, id, status, descrição, tipo) VALUES('$fileNewName', '$id', '$status', '$descricao', '$tipo');";
                 //$resultado = mysqli_query($connect, $sql);
-                
+                $status = "ativo";
                 if(empty($nome) || empty($descricao)):
                     header("Location: conteudos.php?upload=vazio");
                 else:
-                    $stmt = mysqli_stmt_init($connect);
-                    $sql = "INSERT INTO conteudos(nome, caminho, id, status, descrição, tipo) VALUES('$nome', '$fileNewName', '$id', '$status', '$descricao', '$tipo');";
+                    //$stmt = mysqli_stmt_init($connect);
+                    $sql = "INSERT INTO conteudos (nome, id, status, descrição, tipo, caminho) VALUES ('{$nome}', '{$id}', '{$status}', '{$descricao}', '{$tipo}', '{$fileDestination}')";
                     $resultado = mysqli_query($connect, $sql);
                     
                                             
@@ -58,7 +54,7 @@ if(isset($_POST['send'])):
                             echo "O upload do ficheiro foi um sucesso!<br>"; 
                         endif;
                     else:
-                        echo "ocorreu um erro<br>";    
+                        echo "ocorreu um erro.Verifique seu sql statement!<br>";    
                     endif;
 
                     /*if(!mysqli_stmt_prepare($stmt, $sql)):
