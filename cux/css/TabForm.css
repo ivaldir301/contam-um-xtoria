@@ -1,0 +1,177 @@
+/* Navbar*/
+
+.content{
+	max-width: 1300px;
+	margin: auto;
+	padding: 0px 30px;
+}
+
+.navbar{
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	padding:10px 0;
+	background:#1F2833;
+}
+
+.navbar .content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .logo a{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.navbar .menu-list{
+	display: inline-flex;
+}
+
+.menu-list li{
+	list-style: none;
+}
+.menu-list li a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 30px;
+	text-decoration: none;
+}
+
+/*Tabela*/
+
+body{
+    font-family: Helvetica;
+    float: center;
+    }
+
+h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: grey;
+    padding: 30px 0;
+    
+}
+
+/*Tabela estilos*/
+
+.table-wrapper{
+    margin: 10px 70px 70px;   
+    float: center;
+    align-items: center;
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+    float: center;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: black;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+
+/*Formulario*/
+
+/* Botao formulario */
+.btn{
+ display: flex;
+ justify-content: center;
+ top: 85%;
+ left: auto;
+ right: auto;
+ margin: 1px;
+}
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

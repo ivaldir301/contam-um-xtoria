@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/TabForm.css">
+
+
+
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="content">
+				<div class="logo"><a href="#">CONTAM UM XTÓRIA</a></div>
+				<ul class="menu-list">
+					<li><a href="#">Conteúdo</a></li>
+					<li><a href="#">Perfil</a></li>
+			        <li><a href="#">Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<h2>Conteudos Adicionados</h2>
+	<div class="table-wrapper">
+	    <table class="fl-table">
+	        <thead>
+	        <tr>
+	            <th>Nome</th>
+	            <th>Formato</th>
+	            <th>Publicador</th>
+	            <th>ID Publicador</th>
+	            <th>Dia</th>
+	            <th>Hora</th>
+	        </tr>
+	        </thead>
+	        <tbody>
+	        <tr>
+	            <td>Content 1</td>
+	            <td>Content 1</td>
+	            <td>Content 1</td>
+	            <td>Content 1</td>
+	            <td>Content 1</td>
+	            <td>Content 1</td>
+	        </tr>
+	        <tr>
+	            <td>Content 2</td>
+	            <td>Content 2</td>
+	            <td>Content 2</td>
+	            <td>Content 2</td>
+	            <td>Content 2</td>
+	            <td>Content 2</td>
+	        </tr>
+	        <tr>
+	            <td>Content 3</td>
+	            <td>Content 3</td>
+	            <td>Content 3</td>
+	            <td>Content 3</td>
+	            <td>Content 3</td>
+	            <td>Content 3</td>
+	        </tr>
+	        <tr>
+	            <td>Content 4</td>
+	            <td>Content 4</td>
+	            <td>Content 4</td>
+	            <td>Content 4</td>
+	            <td>Content 4</td>
+	            <td>Content 4</td>
+	        </tr>
+	        <tr>
+	            <td>Content 5</td>
+	            <td>Content 5</td>
+	            <td>Content 5</td>
+	            <td>Content 5</td>
+	            <td>Content 5</td>
+	            <td>Content 4</td>
+	        </tr>
+	        <tr>
+	            <td>Content 6</td>
+	            <td>Content 6</td>
+	            <td>Content 6</td>
+	            <td>Content 6</td>
+	            <td>Content 6</td>
+	            <td>Content 4</td>
+	        </tr>
+	        <tr>
+	            <td>Content 7</td>
+	            <td>Content 7</td>
+	            <td>Content 7</td>
+	            <td>Content 7</td>
+	            <td>Content 7</td>
+	            <td>Content 4</td>
+	        </tr>
+	        <tr>
+	            <td>Content 8</td>
+	            <td>Content 8</td>
+	            <td>Content 8</td>
+	            <td>Content 8</td>
+	            <td>Content 8</td>
+	            <td>Content 4</td>
+	        </tr>
+	        <tr>
+	            <td>Content 9</td>
+	            <td>Content 9</td>
+	            <td>Content 9</td>
+	            <td>Content 9</td>
+	            <td>Content 9</td>
+	            <td>Content 4</td>
+	        </tr>
+	        <tr>
+	            <td>Content 10</td>
+	            <td>Content 10</td>
+	            <td>Content 10</td>
+	            <td>Content 10</td>
+	            <td>Content 10</td>
+	            <td>Content 4</td>
+	        </tr>
+
+	        <tbody>
+	    </table>
+	</div>
+	
+	<div class="container" style="margin-top: 30px; ">
+  		<div style="text-align: center" >
+  			Formulário de Adicionar conteudos 
+	</div> 			
+  		
+	<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nome</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Login</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Admin</option>
+          <option value="canada">CGI</option>
+          <option value="usa">USER</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+  	
+ <div class="container" style="margin-top: 30px; ">
+  		<div style="text-align: center" >
+  			Formulário de Atualizar conteudos  
+	</div> 	 	
+
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+    	Antigo login
+    	<div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <br>
+      </div>
+      <br><br><br><br><br>
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+<div class="container" style="margin-top: 30px; ">
+  		<div style="text-align: center" >
+  			Formulário de Remover conteudos  
+	</div> 	
+
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div> 	
+
+</body>
+</html>
