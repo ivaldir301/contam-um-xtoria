@@ -5,7 +5,7 @@
 $server_name = "localhost";
 $user_name = "root";
 $password = "";
-$db_name = "imgupload";
+$db_name = "sistema_login";
 
 $connect = mysqli_connect($server_name, $user_name, $password, $db_name)  or die ($connect);;
 

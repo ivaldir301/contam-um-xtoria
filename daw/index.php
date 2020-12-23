@@ -49,6 +49,8 @@ endif;
 <a href="logout.php">Sair...</a>
 <a href="profile.php">Meu perfil</a>
 <a href="conteudos.php">Conteudos</a>
+<a href="cadastro.php">Cadastro</a>
+
 
 </body>
 </html>  

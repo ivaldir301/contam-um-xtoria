@@ -29,6 +29,7 @@ if(isset($_POST['send'])):
 
                 //$nomeFicheiro = 'cont/cont'.$tipo.'.jpg';
                 $nomeFicheiro = 'uploads/profile'.$id.'.jpg';
+                
                 unlink($nomeFicheiro);
                 
                 move_uploaded_file($fileTmpname, $fileDestination);
